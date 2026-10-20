@@ -1,0 +1,1 @@
+iex "& { $(irm 'https://aka.ms/InstallTool.ps1') } agency"

@@ -1,0 +1,19 @@
+[mcps]
+
+[mcps.servers]
+ado = { args = ["-y", "@azure-devops/mcp", "msazure", "--authentication", "azcli"], command = "npx", tools = ["*"], type = "stdio" }
+bluebird = { headers = { x-mcp-ec-branch = "dev", x-mcp-ec-organization = "msazure", x-mcp-ec-project = "One", x-mcp-ec-repository = "Azure-Kusto-Service" }, tools = ["*"], type = "http", url = "https://mcp.bluebird-ai.net/" }
+kusto = { args = ["microsoft-fabric-rti-mcp"], command = "uvx", env = { KUSTO_DATABASE = "Kuskus", KUSTO_SERVICE_URI = "https://kuskushead.westeurope.kusto.windows.net" }, tools = ["*"], type = "stdio" }
+
+[plugins]
+default = [
+  "market:rust-sdk@playground",
+  "market:limn@agency-microsoft/playground",
+]
+
+
+[mcps.builtins]
+workiq = true
+ado = true
+bluebird = true
+enghub = true

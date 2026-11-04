@@ -1,0 +1,4 @@
+Tool,Type,Arguments,Description
+ripgrep,winget,--id BurntSushi.ripgrep.MSVC,RipGrep (rg) is grep-on-steroids
+fd,winget,--id sharkdp.fd,Find files on disk whose name follow the specified pattern
+fzf,winget,--id junegunn.fzf,List items such as files in a subfolder

@@ -1,3 +1,7 @@
+# agency.toml
+#
+# The "spec" for this file is at "https://eng.ms/docs/agency/cli/agency-config.html"
+
 [mcps]
 
 [mcps.servers]

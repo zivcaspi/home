@@ -58,16 +58,6 @@ REM ****************************************************************************
 :Git
 
 ECHO TODO - Install GIT if it's not already installed...
-ECHO TODO - Configure ziv caspi as the git email (different for github repos and ADO repos) - how can I control this?
-
-git config --global color.grep.filename "brightcyan"
-git config --global color.grep.linenumber "brightblue"
-git config --global color.grep.match "brightyellow bold"
-git config --global color.grep.context "white"
-git config --global color.grep.selected "brightgreen"
-git config --global color.grep.separator "brightblack"
-git config --global color.ui always
-git config --global color.error "red bold"
 GOTO :EOF
 
 REM ****************************************************************************

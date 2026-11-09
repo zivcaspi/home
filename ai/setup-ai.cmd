@@ -1,0 +1,25 @@
+@ECHO OFF
+SETLOCAL
+
+SET ROOTDIR=%~dp0
+SET ROOTFILE=%ROOTDIR%\ai.json
+
+REM GitHub CLI
+SETX GH_CONFIG_DIR "%ROOTDIR%"
+
+REM Copilot CLI
+SETX COPILOT_CONFIG_DIR "%ROOTDIR%"
+
+REM Agency
+SETX AGENCY_CONFIG "%ROOTFILE%"
+
+REM 
+SETX MCP_CONFIG "%ROOTFILE%"
+
+REM GitHub Desktop
+REM Modify .gitconfig so that it has:
+REM [include]
+REM path = %ROOTFILE%
+
+REM VS Code
+REM TODO - Configure it to point at the ROOTFILE

@@ -1,0 +1,2 @@
+Tool,Type,Arguments,Description
+githubcopilot,winget,--id GitHub.CopilotApp,GitHub Copilot App

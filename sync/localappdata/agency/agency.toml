@@ -13,6 +13,7 @@ kusto = { args = ["microsoft-fabric-rti-mcp"], command = "uvx", env = { KUSTO_DA
 default = [
   "market:rust-sdk@playground",
   "market:limn@agency-microsoft/playground",
+  "market:engine-azure-profiler@agency-microsoft/playground",
 ]
 
 
@@ -21,3 +22,4 @@ workiq = true
 ado = true
 bluebird = true
 enghub = true
+
